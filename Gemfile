@@ -26,4 +26,7 @@ group :test do
   gem 'spork', '0.9.0.rc8'
   gem 'factory_girl_rails', '1.0'
   gem "sqlite3-ruby", :require => "sqlite3"
+  gem 'autotest', '4.4.6'
+  gem 'autotest-rails-pure', '4.1.2'
+  gem 'autotest-growl', '0.2.9'
 end
