@@ -20,7 +20,7 @@ describe "LayoutLinks" do
 
   it "should have a Help page at '/help'" do
     get '/help'
-    response.should have_selector('title', :content => "Help")
+    response.should have_selector('title', :content => "FAQ")                     #Linkbeschreibung verändert
   end
 
   it "should have a signup page at '/signup'" do
@@ -32,13 +32,13 @@ describe "LayoutLinks" do
     visit root_path
     click_link "About"
     response.should have_selector('title', :content => "About")
-    click_link "Help"
-    response.should have_selector('title', :content => "Help")
+    click_link "FAQ"                                                              #Linkbeschreibung verändert
+    response.should have_selector('title', :content => "FAQ")                     #Linkbeschreibung verändert
     click_link "Kontakt"                                                          #Linkbeschreibung übersetzt
     response.should have_selector('title', :content => "Kontakt")                 #Linkbeschreibung übersetzt
     click_link "Startseite"                                                       #Linkbeschreibung übersetzt
     response.should have_selector('title', :content => "Startseite")              #Linkbeschreibung übersetzt
-    click_link "Sign up now!"
+    click_link "Jetzt regristrieren!"                                             #Linkbeschreibung übersetzt
     response.should have_selector('title', :content => "Sign up")
   end
 end

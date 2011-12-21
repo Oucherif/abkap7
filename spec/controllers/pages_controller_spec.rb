@@ -15,7 +15,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get'help'
-      response.should have_selector("title", :content => @base_title + " Help")
+      response.should have_selector("title", :content => @base_title + " FAQ")           #Linkbeschreibung verändert
     end
   end
 
