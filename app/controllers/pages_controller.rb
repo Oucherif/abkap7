@@ -6,11 +6,11 @@ class PagesController < ApplicationController
   end
 
   def home
-    @title = "Home"
+    @title = "Startseite"                                                   #Titel der Startseite übersetzt
   end
 
   def contact
-    @title = "Contact"
+    @title = "Kontakt"                                                      #Titel der Kontaktseite übersetzt
   end
 
   def about

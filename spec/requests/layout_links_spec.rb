@@ -5,12 +5,12 @@ describe "LayoutLinks" do
 
   it "should have a Home page at '/'" do
     get '/'
-    response.should have_selector('title', :content => "Home")
+    response.should have_selector('title', :content => "Startseite")              #Linkbeschreibung übersetzt
   end
 
   it "should have a Contact page at '/contact'" do
     get '/contact'
-    response.should have_selector('title', :content => "Contact")
+    response.should have_selector('title', :content => "Kontakt")                 #Linkbeschreibung übersetzt
   end
 
   it "should have an About page at '/about'" do
@@ -34,10 +34,10 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "About")
     click_link "Help"
     response.should have_selector('title', :content => "Help")
-    click_link "Contact"
-    response.should have_selector('title', :content => "Contact")
-    click_link "Home"
-    response.should have_selector('title', :content => "Home")
+    click_link "Kontakt"                                                          #Linkbeschreibung übersetzt
+    response.should have_selector('title', :content => "Kontakt")                 #Linkbeschreibung übersetzt
+    click_link "Startseite"                                                       #Linkbeschreibung übersetzt
+    response.should have_selector('title', :content => "Startseite")              #Linkbeschreibung übersetzt
     click_link "Sign up now!"
     response.should have_selector('title', :content => "Sign up")
   end

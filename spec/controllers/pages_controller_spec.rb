@@ -5,7 +5,7 @@ describe PagesController do
   render_views
 
   before(:each) do
-   @base_title="Ruby on Rails Tutorial Sample App"
+   @base_title="HPPLAN Online!"                                                   # Basistitel angepasst
   end
 
    describe "GET 'help'" do
@@ -15,7 +15,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get'help'
-      response.should have_selector("title", :content => @base_title + " | Help")
+      response.should have_selector("title", :content => @base_title + " Help")
     end
   end
 
@@ -27,7 +27,7 @@ describe PagesController do
     end
     it "should have the right title" do
       get'home'
-      response.should have_selector("title", :content => @base_title + " | Home")
+      response.should have_selector("title", :content => @base_title + " Startseite")       #Test an Übersetzung angepasst
     end
   end
  describe "GET 'contact'" do
@@ -38,7 +38,7 @@ describe PagesController do
 
     it "should have the right title" do
       get 'contact'
-      response.should have_selector("title", :content => @base_title + " | Contact")
+      response.should have_selector("title", :content => @base_title + " Kontakt")         #Test an Übersetzung angepasst
     end
   end
 
@@ -50,7 +50,7 @@ describe PagesController do
 
     it "should have the right title" do
       get 'about'
-      response.should have_selector("title", :content => @base_title + " | About")
+      response.should have_selector("title", :content => @base_title + " About")
     end
   end
 end

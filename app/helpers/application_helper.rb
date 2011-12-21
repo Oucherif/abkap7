@@ -3,16 +3,16 @@ module ApplicationHelper
 
   # Return a title on a per-page basis.
   def title
-    base_title = "Ruby on Rails Tutorial Sample App"
+    base_title = "HPPLAN Online!"                                           # Basistitel angepasst
     if @title.nil?
        base_title
     else
-      "#{base_title}"+" | "+"#{@title}"
+      "#{base_title}"+" "+"#{@title}"
     end
   end
 
   def logo
-    image_tag("logo.png", :alt => "Sample App", :class => "round")
+    image_tag("logo.png", :alt => "HPPLAN Online!", :class => "round")      # Alternative Grafikbeschreibung angepasst
   end
 
 end
