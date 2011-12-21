@@ -1,3 +1,4 @@
+# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 SampleApp::Application.routes.draw do
  resources :users
 

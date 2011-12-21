@@ -1,3 +1,5 @@
+# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
+
 # == Schema Information
 #
 # Table name: users

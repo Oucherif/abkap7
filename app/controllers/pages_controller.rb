@@ -1,3 +1,4 @@
+# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 class PagesController < ApplicationController
 
   def help

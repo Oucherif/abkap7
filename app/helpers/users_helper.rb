@@ -1,3 +1,4 @@
+# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 module UsersHelper
 
   def gravatar_for(user, options = { :size => 50 })

@@ -1,3 +1,4 @@
+# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'

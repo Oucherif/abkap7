@@ -1,3 +1,4 @@
+# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|

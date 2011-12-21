@@ -1,3 +1,4 @@
+# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 module ApplicationHelper
 
   # Return a title on a per-page basis.
