@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     @title = "FAQ"
   end
 
-  def home
+  def startseite
     @title = "Startseite"                                                   #Titel der Startseite übersetzt
   end
 

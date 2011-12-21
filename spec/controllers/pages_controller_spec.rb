@@ -20,13 +20,13 @@ describe PagesController do
   end
 
 
-  describe "GET 'home'" do
+  describe "GET 'startseite'" do
     it "should be successful" do
-      get 'home'
+      get 'startseite'
       response.should be_success
     end
     it "should have the right title" do
-      get'home'
+      get'startseite'
       response.should have_selector("title", :content => @base_title + " Startseite")       #Test an Übersetzung angepasst
     end
   end

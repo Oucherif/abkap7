@@ -38,7 +38,7 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "Kontakt")                 #Linkbeschreibung übersetzt
     click_link "Startseite"                                                       #Linkbeschreibung übersetzt
     response.should have_selector('title', :content => "Startseite")              #Linkbeschreibung übersetzt
-    click_link "Jetzt regristrieren!"                                             #Linkbeschreibung übersetzt
+    click_link "Jetzt registrieren!"                                              #Linkbeschreibung übersetzt
     response.should have_selector('title', :content => "Sign up")
   end
 end
