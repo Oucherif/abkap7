@@ -1,9 +1,11 @@
+/* Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl*/
+/* Im Folgenden wo angemerkt die Farben auf ein schlichtes blau und reines weiß geändert*/
 .container {
   width: 710px;
 }
 
 body {
-  background: #cff;
+  background: #336699;                  /*Allgemeine Hintergrundfarbe auf blau geändert*/
 }
 
 header {
@@ -12,14 +14,14 @@ header {
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: #ffffff;                  /*Hintergrundfarbe des Kopfteils auf weiß geändert*/
 }
 
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+  background: #ffffff;                 /*Hintergrundfarbe auf weiß geändert*/
 }
 
 section h1 {
@@ -34,12 +36,12 @@ a {
 }
 
 a:hover {
-  color: #069;
-  text-decoration: underline;
+  color: #336699;
+  text-decoration: underline;          /*Linkfarbe auf blau geändert*/
 }
 
 a:visited {
-  color: #069;
+  color: #336699;                      /*Linkfarbe auf blau geändert*/
 }
 
 /* Navigation */
@@ -71,7 +73,7 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #336699;                    /*Linkfarbe auf blau geändert*/
 }
 
 nav ul li a:hover {
@@ -86,8 +88,8 @@ a.signup_button {
   display: block;
   text-align: center;
   width: 190px;
-  color: #fff;
-  background: #006400;
+  color: #ffffff;                   /*Schriftfarbe auf weiß geändert*/
+  background: #247a24;              /*Hintergrundfarbe der Farbhelligkeit des Blautons angepasst*/
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
