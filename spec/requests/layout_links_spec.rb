@@ -8,8 +8,8 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "Startseite")              #Linkbeschreibung übersetzt
   end
 
-  it "should have a Contact page at '/contact'" do
-    get '/contact'
+  it "should have a Kontakt page at '/kontakt'" do
+    get '/kontakt'
     response.should have_selector('title', :content => "Kontakt")                 #Linkbeschreibung übersetzt
   end
 
@@ -18,8 +18,8 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "About")
   end
 
-  it "should have a Help page at '/help'" do
-    get '/help'
+  it "should have a FAQ page at '/faq'" do
+    get '/faq'
     response.should have_selector('title', :content => "FAQ")                     #Linkbeschreibung verändert
   end
 

@@ -8,13 +8,13 @@ describe PagesController do
    @base_title="HPPLAN Online!"                                                   # Basistitel angepasst
   end
 
-   describe "GET 'help'" do
+   describe "GET 'faq'" do
     it "should be successful" do
-      get 'help'
+      get 'faq'
       response.should be_success
     end
     it "should have the right title" do
-      get'help'
+      get'faq'
       response.should have_selector("title", :content => @base_title + " FAQ")           #Linkbeschreibung verändert
     end
   end
@@ -30,14 +30,14 @@ describe PagesController do
       response.should have_selector("title", :content => @base_title + " Startseite")       #Test an Übersetzung angepasst
     end
   end
- describe "GET 'contact'" do
+ describe "GET 'kontakt'" do
     it "should be successful" do
-      get 'contact'
+      get 'kontakt'
       response.should be_success
     end
 
     it "should have the right title" do
-      get 'contact'
+      get 'kontakt'
       response.should have_selector("title", :content => @base_title + " Kontakt")         #Test an Übersetzung angepasst
     end
   end

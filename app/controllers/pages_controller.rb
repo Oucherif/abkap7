@@ -1,7 +1,7 @@
 # Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 class PagesController < ApplicationController
 
-  def help
+  def faq
     @title = "FAQ"
   end
 
@@ -9,7 +9,7 @@ class PagesController < ApplicationController
     @title = "Startseite"                                                   #Titel der Startseite übersetzt
   end
 
-  def contact
+  def kontakt
     @title = "Kontakt"                                                      #Titel der Kontaktseite übersetzt
   end
 

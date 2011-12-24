@@ -3,9 +3,9 @@ SampleApp::Application.routes.draw do
  resources :users
 
   match '/signup',  :to => 'users#new'
-  match '/contact', :to => 'pages#contact'
+  match '/kontakt', :to => 'pages#kontakt'
   match '/about',   :to => 'pages#about'
-  match '/help',    :to => 'pages#help'
+  match '/faq',    :to => 'pages#faq'
 
   root :to => 'pages#startseite'
 
