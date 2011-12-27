@@ -225,7 +225,9 @@ de:
         user:
           attributes:
             name:
-
+              email: "E-Mail"
+              name: "Name"
+              password: "Passwort"
 
 
 

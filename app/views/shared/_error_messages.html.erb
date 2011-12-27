@@ -6,8 +6,9 @@
     <p>Bitte ändern Sie die Eingabe entsprechend der Fehlermeldungen:</p>
     <ul>
     <% @user.errors.full_messages.each do |msg| %>
-      <li><%=I18n.t msg%></li>
-    <% end %>
+      <li><%= msg%></li>
+
+      <% end %>
     </ul>
   </div>
 <% end %>
