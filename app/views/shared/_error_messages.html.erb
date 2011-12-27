@@ -1,8 +1,9 @@
+<%# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl%>
 <% if @user.errors.any? %>
   <div id="error_explanation">
-    <h2><%= pluralize(@user.errors.count, "error") %>
-        prohibited this user from being saved:</h2>
-    <p>There were problems with the following fields:</p>
+    <h2><%= @user.errors.count %>
+        Fehler verhindern die erfolgreiche Registrierung!</h2>
+    <p>Bitte ändern Sie die Eingabe entsprechend der Fehlermeldungen:</p>
     <ul>
     <% @user.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>

@@ -144,23 +144,31 @@ div.field, div.actions {
 }
 
 .field_with_errors {
-  margin-top: 10px;
-  padding: 2px;
-  background-color: red;
+  margin-top: 0px;                                           /*Rahmen entfernt*/
+  padding: 0px;                                              /*Rahmen entfernt*/
+  background-color: #ffffff;                                 /*Farbe auf weiß gesetzt*/
   display: table;
 }
 
 .field_with_errors label {
-  color: #fff;
+  color: #000000;                                            /*Farbe auf schwarz gesetzt*/
+  background-color: #FF7F50;                                 /*Farbe auf orange gesetzt*/
+  padding: 5px 5px 5px;                                      /*Rahmen hinzugefügt*/
+  -moz-border-radius:    10px;                               /*Ecken abgerundet*/
+  -webkit-border-radius: 10px;                               /*Ecken abgerundet*/
+  border-radius:         10px;                               /*Ecken abgerundet*/
 }
 
 #error_explanation {
   width: 400px;
-  border: 2px solid red;
+  border: 0px solid #FF7F50;                                /*Rahmen entfernt*//*Farbe auf orange gesetzt*/
   padding: 7px;
   padding-bottom: 12px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+  -moz-border-radius:    10px;                              /*Ecken abgerundet*/
+  -webkit-border-radius: 10px;                              /*Ecken abgerundet*/
+  border-radius:         10px;                              /*Ecken abgerundet*/
 }
 
 #error_explanation h2 {
@@ -169,14 +177,17 @@ div.field, div.actions {
   padding: 5px 5px 5px 15px;
   font-size: 12px;
   margin: -7px;
-  background-color: #c00;
-  color: #fff;
+  background-color: #FF7F50;                                /*Farbe auf orange gesetzt*/
+  color: #000000;                                           /*Farbe auf schwarz gesetzt*/
+  -moz-border-radius:    10px;                              /*Ecken abgerundet*/
+  -webkit-border-radius: 10px;                              /*Ecken abgerundet*/
+  border-radius:         10px;                              /*Ecken abgerundet*/
 }
 
 #error_explanation p {
   color: #333;
   margin-bottom: 0;
-  padding: 5px;
+  padding: 10px;
 }
 
 #error_explanation ul li {
