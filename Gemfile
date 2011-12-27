@@ -9,6 +9,7 @@ gem 'will_paginate', '3.0.pre2'
 gem 'heroku'
 
 gem 'rack'
+gem 'i18n'
 
 group :production, :staging do
   gem "pg"

@@ -185,7 +185,6 @@ de:
 
   errors:
     format: "%{attribute} %{message}"
-
     messages: &errors_messages
       inclusion: "ist kein gültiger Wert"
       exclusion: "ist nicht verfügbar"
@@ -208,6 +207,7 @@ de:
       not_an_integer: "muss ganzzahlig sein"
       taken: "ist bereits vergeben"
       record_invalid: "Gültigkeitsprüfung ist fehlgeschlagen: %{errors}"
+
     template: &errors_template
       header:
         one:    "Konnte %{model} nicht speichern: ein Fehler."
@@ -215,7 +215,20 @@ de:
       body: "Bitte überprüfen Sie die folgenden Felder:"
 
   activerecord:
+    attributes:
+      user:
+        email:  "E-Mail"
+        name: "Name"
+        password: "Passwort"
     errors:
+      models:
+        user:
+          attributes:
+            name:
+
+
+
+
       messages:
         <<: *errors_messages
       template:
