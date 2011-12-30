@@ -45,7 +45,7 @@ describe UsersController do
 
     it "should have the right title" do
       get :new
-      response.should have_selector("title", :content => "Sign up")
+      response.should have_selector("title", :content => "Registrierung")
     end
 
     it "should have a name field" do
@@ -67,6 +67,11 @@ describe UsersController do
       get :new
       response.should have_selector("input[name='user[password_confirmation]'][type='password']")
     end
+
+    it "should have a schluessel field" do                                                         #Schlüssel angefügt
+      get :new
+      response.should have_selector("input[name='user[schluessel]'][type='password']")
+    end
   end
 
   describe "POST 'create'" do
@@ -75,7 +80,7 @@ describe UsersController do
 
       before(:each) do
         @attr = { :name => "", :email => "", :password => "",
-                  :password_confirmation => "" }
+                  :password_confirmation => "", :schluessel => "" }                   #Schlüssel angefügt
       end
 
       it "should not create a user" do
@@ -86,7 +91,7 @@ describe UsersController do
 
       it "should have the right title" do
         post :create, :user => @attr
-        response.should have_selector("title", :content => "Sign up")
+        response.should have_selector("title", :content => "Registrierung")
       end
 
       it "should render the 'new' page" do
@@ -99,7 +104,7 @@ describe UsersController do
 
       before(:each) do
         @attr = { :name => "New User", :email => "user@example.com",
-                  :password => "foobar", :password_confirmation => "foobar" }
+                  :password => "foobar", :password_confirmation => "foobar", :schluessel => "abc" }
       end
 
       it "should create a user" do
@@ -115,7 +120,7 @@ describe UsersController do
 
       it "should have a welcome message" do
         post :create, :user => @attr
-        flash[:success].should =~ /Willkommen auf HPPLAN Online!/i
+        flash[:success].should =~ /Willkommen auf HPPLAN Online!/i                   #Nachricht angepasst
       end
     end
   end

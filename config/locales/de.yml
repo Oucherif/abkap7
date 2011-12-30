@@ -217,17 +217,17 @@ de:
   activerecord:
     attributes:
       user:
-        email:  "E-Mail"
-        name: "Name"
-        password: "Passwort"
+        email:  "E-Mail"                                        #Feldnamenübersetzung eingefügt
+        name: "Name"                                            #Feldnamenübersetzung eingefügt
+        password: "Passwort"                                    #Feldnamenübersetzung eingefügt
     errors:
       models:
         user:
           attributes:
             name:
-              email: "E-Mail"
-              name: "Name"
-              password: "Passwort"
+              email: "E-Mail"                                   #Feldnamenübersetzung eingefügt
+              name: "Name"                                      #Feldnamenübersetzung eingefügt
+              password: "Passwort"                              #Feldnamenübersetzung eingefügt
 
 
 

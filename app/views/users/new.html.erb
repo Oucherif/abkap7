@@ -1,5 +1,5 @@
 <%# Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl%>
-<h1>Sign up</h1>
+<h1>Registrierung</h1>
 
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages' %>
@@ -20,7 +20,8 @@
     <%= f.label :password_confirmation, "Passwortwiederholung" %><br />          <%#Übersetzt%>
     <%= f.password_field :password_confirmation %>
   </div>
+
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Registrierung abschließen" %>
   </div>
 <% end %>

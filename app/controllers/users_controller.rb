@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @title = "Sign up"
+    @title = "Registrierung"
   end
 
   def create
@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       flash[:success] = "Willkommen auf HPPLAN Online!"       #Willkommensgruß angepasst
       redirect_to @user
     else
-      @title = "Sign up"
+      @title = "Registrierung"
       @user.password =""                                      #Passwort bei Fehler zurückgesetzt
       @user.password_confirmation=""                          #Passwort bei Fehler zurückgesetzt
       render 'new'
