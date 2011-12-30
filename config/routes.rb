@@ -1,8 +1,11 @@
 # Übernommen aus "Ruby on Rails Tutorial" von Michael Hartl
 SampleApp::Application.routes.draw do
- resources :users
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
 
   match '/signup',  :to => 'users#new'
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
   match '/kontakt', :to => 'pages#kontakt'
   match '/about',   :to => 'pages#about'
   match '/faq',    :to => 'pages#faq'

@@ -67,11 +67,6 @@ describe UsersController do
       get :new
       response.should have_selector("input[name='user[password_confirmation]'][type='password']")
     end
-
-    it "should have a schluessel field" do                                                         #Schlüssel angefügt
-      get :new
-      response.should have_selector("input[name='user[schluessel]'][type='password']")
-    end
   end
 
   describe "POST 'create'" do
@@ -80,7 +75,7 @@ describe UsersController do
 
       before(:each) do
         @attr = { :name => "", :email => "", :password => "",
-                  :password_confirmation => "", :schluessel => "" }                   #Schlüssel angefügt
+                  :password_confirmation => ""}
       end
 
       it "should not create a user" do
@@ -104,7 +99,7 @@ describe UsersController do
 
       before(:each) do
         @attr = { :name => "New User", :email => "user@example.com",
-                  :password => "foobar", :password_confirmation => "foobar", :schluessel => "abc" }
+                  :password => "foobar", :password_confirmation => "foobar"}
       end
 
       it "should create a user" do
@@ -116,6 +111,11 @@ describe UsersController do
       it "should redirect to the user show page" do
         post :create, :user => @attr
         response.should redirect_to(user_path(assigns(:user)))
+      end
+
+      it "should sign the user in" do
+        post :create, :user => @attr
+        controller.should be_signed_in
       end
 
       it "should have a welcome message" do

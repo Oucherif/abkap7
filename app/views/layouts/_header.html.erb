@@ -4,8 +4,15 @@
   <nav class="round">
     <ul>
       <li><%= link_to "Startseite", root_path %></li>                         <%# Linkbeschreibung übersetzt%>
+      <% if signed_in? %>
+      <li><%= link_to "Profile", current_user %></li>
+      <% end %>
       <li><%= link_to "FAQ", faq_path %></li>                                <%# Linkbeschreibung verändert%>
-      <li><%= link_to "Sign in", '#' %></li>
+      <% if signed_in? %>
+      <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to "Sign in", signin_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
