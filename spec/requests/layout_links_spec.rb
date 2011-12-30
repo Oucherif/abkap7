@@ -46,7 +46,7 @@ describe "LayoutLinks" do
     it "should have a signin link" do
       visit root_path
       response.should have_selector("a", :href => signin_path,
-                                         :content => "Sign in")
+                                         :content => "Anmelden")                  #Übersetzt
     end
   end
 
@@ -63,13 +63,13 @@ describe "LayoutLinks" do
     it "should have a signout link" do
       visit root_path
       response.should have_selector("a", :href => signout_path,
-                                         :content => "Sign out")
+                                         :content => "Abmelden")                 #Übersetzt
     end
 
     it "should have a profile link" do
       visit root_path
       response.should have_selector("a", :href => user_path(@user),
-                                         :content => "Profile")
+                                         :content => "Profil")                   #Übersetzt
     end
   end
 end
